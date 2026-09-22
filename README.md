@@ -11,10 +11,7 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-3-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-22d3ee?style=flat-square)](LICENSE)
 
-### ▶ [Démo en ligne / Live demo](https://REPLACE-ME.github.io/soc-analyst-simulator/)
-
-<sub>Remplacez `REPLACE-ME` par votre identifiant GitHub après le premier déploiement.<br>
-Replace `REPLACE-ME` with your GitHub username after the first deployment.</sub>
+### ▶ [Démo en ligne / Live demo](https://Pinguz0x0.github.io/soc-analyst-simulator/)
 
 [Français](#-français) · [English](#-english)
 
@@ -188,7 +185,7 @@ Quelques choix de conception :
 ### Installation
 
 ```bash
-git clone https://github.com/REPLACE-ME/soc-analyst-simulator.git
+git clone https://github.com/Pinguz0x0/soc-analyst-simulator.git
 cd soc-analyst-simulator
 npm install
 npm run dev
@@ -341,7 +338,7 @@ Design choices worth calling out:
 ### Getting started
 
 ```bash
-git clone https://github.com/REPLACE-ME/soc-analyst-simulator.git
+git clone https://github.com/Pinguz0x0/soc-analyst-simulator.git
 cd soc-analyst-simulator
 npm install
 npm run dev
