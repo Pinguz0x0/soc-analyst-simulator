@@ -44,7 +44,7 @@ export const level1: Scenario = {
           fr: 'Alerte CISA AA20-280A — Emotet Malware',
           en: 'CISA Alert AA20-280A — Emotet Malware',
         },
-        // TODO: vérifier l'URL exacte de l'avis (identifiant AA20-280A confirmé, chemin du site CISA susceptible d'évoluer).
+        // Lien vérifié : renvoie bien vers l'avis « Emotet Malware », code AA20-280A.
         url: 'https://www.cisa.gov/news-events/cybersecurity-advisories/aa20-280a',
       },
       {

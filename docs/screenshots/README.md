@@ -1,19 +1,19 @@
 # Captures d'écran / Screenshots
 
-Déposez ici les images référencées par le README.
-Place the images referenced by the README here.
+Images utilisées par le [README](../../README.md).
+Images used by the [README](../../README.md).
 
-| Fichier / File            | Écran / Screen                                      |
-| ------------------------- | --------------------------------------------------- |
-| `home.png`                | Tableau de bord, choix des niveaux, rang et badges   |
-| `triage.png`              | Carte d'alerte + question de triage                  |
-| `investigation.png`       | Pivots ouverts, LogViewer, IOC extraits              |
-| `mitre.png`               | Mini-matrice ATT&CK après validation                 |
-| `timeline.png`            | Reconstruction de la kill chain                      |
-| `debrief.png`             | Débrief : leçons, causes racines, rapport d'incident |
+| Fichier / File       | Écran / Screen                                       |
+| -------------------- | ---------------------------------------------------- |
+| `home.png`           | Tableau de bord : niveaux, rang et badges            |
+| `triage.png`         | Carte d'alerte et question de triage                 |
+| `investigation.png`  | Pivots ouverts, LogViewer, IOC extraits              |
+| `mitre.png`          | Mini-matrice ATT&CK après validation                 |
+| `timeline.png`       | Reconstruction de la kill chain                      |
+| `debrief.png`        | Débrief : leçons, causes racines, rapport d'incident |
 
-Conseils : fenêtre en 1440 × 900, thème sombre par défaut, une capture en
-français et une en anglais pour montrer la bascule i18n.
+Pour refaire une série : fenêtre en 1440 × 900, thème sombre par défaut.
+La bascule FR/EN du bandeau permet de produire les deux versions.
 
-Tips: 1440 × 900 window, default dark theme, one capture in French and one in
-English to show the i18n switch.
+To reshoot: 1440 × 900 window, default dark theme. The FR/EN switch in the
+header produces both language versions.

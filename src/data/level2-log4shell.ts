@@ -49,7 +49,7 @@ export const level2: Scenario = {
           fr: 'Avis CISA AA21-356A — Mitiger Log4Shell',
           en: 'CISA Advisory AA21-356A — Mitigating Log4Shell',
         },
-        // TODO: vérifier l'URL exacte (identifiant AA21-356A confirmé, chemin du site CISA susceptible d'évoluer).
+        // Lien vérifié : avis « Mitigating Log4Shell and Other Log4j-Related Vulnerabilities », code AA21-356A.
         url: 'https://www.cisa.gov/news-events/cybersecurity-advisories/aa21-356a',
       },
       {
@@ -58,7 +58,7 @@ export const level2: Scenario = {
           fr: 'Apache Log4j — page de sécurité officielle',
           en: 'Apache Log4j — official security page',
         },
-        // TODO: vérifier l'URL exacte de la page sécurité Log4j 2.x.
+        // Lien vérifié : page sécurité officielle Log4j 2.x, qui liste CVE-2021-44228.
         url: 'https://logging.apache.org/log4j/2.x/security.html',
       },
       {

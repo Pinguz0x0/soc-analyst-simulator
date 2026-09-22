@@ -11,7 +11,7 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-3-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-22d3ee?style=flat-square)](LICENSE)
 
-### ▶ [Démo en ligne / Live demo](https://Pinguz0x0.github.io/soc-analyst-simulator/)
+### ▶ [Démo en ligne / Live demo](https://pinguz0x0.github.io/soc-analyst-simulator/)
 
 [Français](#-français) · [English](#-english)
 
@@ -152,9 +152,9 @@ Quelques choix de conception :
   `attack.mitre.org`. Chaque technique « observée » est accompagnée de la preuve
   qui la justifie (identifiant d'événement + horodatage).
 - Les **sources** des niveaux 1 et 2 sont des références canoniques (CISA, NVD,
-  Apache, MITRE). Les URL dont l'exactitude n'a pas pu être vérifiée hors ligne
-  portent un commentaire `// TODO: vérifier l'URL exacte` dans le code, à côté du
-  lien — aucune URL n'a été inventée.
+  Apache, MITRE). Chaque lien a été ouvert et contrôlé : il renvoie bien vers
+  l'avis ou la fiche qu'il annonce, et le code le note à côté de l'URL. Aucune
+  URL n'a été inventée.
 - Les **adresses IP externes** utilisent les plages de documentation RFC 5737
   (`203.0.113.0/24`). Rien ne pointe vers une infrastructure réelle.
 - Les **noms d'hôtes, comptes et organisations** sont fictifs ; les journaux,
@@ -179,8 +179,8 @@ Quelques choix de conception :
 | **Triage** — carte d'alerte et première décision | **Investigation** — pivots, logs et IOC |
 | ![ATT&CK](docs/screenshots/mitre.png) | ![Timeline](docs/screenshots/timeline.png) |
 | **ATT&CK** — mini-matrice après validation | **Timeline** — reconstruction de la kill chain |
-
-> Les emplacements attendus sont décrits dans [`docs/screenshots/`](docs/screenshots/).
+| ![Débrief](docs/screenshots/debrief.png) | |
+| **Débrief** — leçons, causes racines et rapport d'incident | |
 
 ### Installation
 
@@ -316,9 +316,8 @@ Design choices worth calling out:
   "observed" technique carries the evidence that justifies it (event ID +
   timestamp).
 - **Sources** for levels 1 and 2 are canonical references (CISA, NVD, Apache,
-  MITRE). URLs that could not be verified offline carry a
-  `// TODO: vérifier l'URL exacte` comment next to the link in the code — no URL
-  was invented.
+  MITRE). Every link was opened and checked: it resolves to the advisory or page
+  it claims, and the code records that next to the URL. No URL was invented.
 - **External IP addresses** use the RFC 5737 documentation ranges
   (`203.0.113.0/24`). Nothing points at real infrastructure.
 - **Hostnames, accounts and organisations** are fictional; the logs, Windows
@@ -334,6 +333,12 @@ Design choices worth calling out:
   labelled ↑ / ↓ buttons (keyboard and touch).
 - Consistent visible focus ring, contrast checked against the dark surface,
   `role="status"` on analysis feedback, `prefers-reduced-motion` honoured.
+
+### Screenshots
+
+The captures are shown in the French section above and live in
+[`docs/screenshots/`](docs/screenshots/) — the interface is identical in both
+languages.
 
 ### Getting started
 
@@ -372,3 +377,14 @@ is nothing to edit in `vite.config.ts` — even if you rename the repository.
 
 [MIT](LICENSE). The educational content is free to reuse; MITRE ATT&CK® is a
 registered trademark of The MITRE Corporation.
+
+---
+
+<div align="center">
+
+**Romuald Quessada** — [github.com/Pinguz0x0](https://github.com/Pinguz0x0)
+
+<sub>Retours, questions et propositions de niveaux : ouvrez une issue.<br>
+Feedback, questions and level proposals: open an issue.</sub>
+
+</div>

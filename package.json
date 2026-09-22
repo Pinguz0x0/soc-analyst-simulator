@@ -5,6 +5,26 @@
   "type": "module",
   "description": "SOC Analyst Simulator - a bilingual (FR/EN) browser game that teaches incident response through three real-world investigations.",
   "license": "MIT",
+  "author": "Romuald Quessada (https://github.com/Pinguz0x0)",
+  "homepage": "https://pinguz0x0.github.io/soc-analyst-simulator/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pinguz0x0/soc-analyst-simulator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Pinguz0x0/soc-analyst-simulator/issues"
+  },
+  "keywords": [
+    "soc",
+    "blue-team",
+    "incident-response",
+    "mitre-attack",
+    "siem",
+    "dfir",
+    "cybersecurity-education",
+    "react",
+    "typescript"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && node scripts/validate-content.mjs && vite build",
