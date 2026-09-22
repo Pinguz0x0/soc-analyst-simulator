@@ -31,8 +31,8 @@ export const level3: Scenario = {
 
   realCase: {
     name: {
-      fr: 'Cas vécu — compromission de domaine par compte résiduel',
-      en: 'Field case — domain compromise through a residual account',
+      fr: 'Cas inspiré de faits réels — compromission de domaine par compte résiduel',
+      en: 'Case inspired by real events — domain compromise through a residual account',
     },
     summary: {
       fr: "Ce niveau reprend un scénario d'intrusion classique en entreprise : un compte d'ancien salarié, désactivé mais jamais supprimé ni surveillé, réactivé discrètement par un attaquant qui disposait déjà d'identifiants de service. Le schéma — accès VPN sans authentification forte, RDP, vol d'identifiants en mémoire, rebond latéral, élévation vers Domain Admins, effacement des journaux locaux — est documenté technique par technique dans MITRE ATT&CK, et se retrouve dans la majorité des rapports de réponse à incident publiés sur les compromissions d'Active Directory. L'élément marquant ici n'est pas l'outillage, banal, mais le temps de présence : quarante et un jours entre la première activité observée et la détection.",
