@@ -691,7 +691,10 @@ export const level2: Scenario = {
           tactic: 'execution',
           url: 'https://attack.mitre.org/techniques/T1059/004/',
           observed: true,
-          evidence: { fr: 'java (tomcat9) → /bin/sh -c "curl … | sh".', en: 'java (tomcat9) → /bin/sh -c "curl … | sh".' },
+          evidence: {
+            fr: 'EDR : java (tomcat9) lance /bin/sh -c "curl … | sh".',
+            en: 'EDR: java (tomcat9) spawns /bin/sh -c "curl … | sh".',
+          },
         },
         {
           id: 'T1105',

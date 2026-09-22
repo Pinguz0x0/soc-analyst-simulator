@@ -114,6 +114,9 @@ src/
 │   └── I18nProvider.tsx       # Contexte, bascule persistée, interpolation
 ├── components/                # AlertCard, LogViewer, MitreMatrix, TimelineBuilder…
 └── screens/                   # HomeScreen, ScenarioScreen, SummaryScreen
+
+scripts/
+└── validate-content.mjs       # Tests de contenu exécutés avant chaque build
 ```
 
 Le cœur du contrat :
@@ -140,6 +143,11 @@ Quelques choix de conception :
   protégé, et le jeu fonctionne en navigation privée (avec un avertissement).
 - **Les mauvaises réponses coûtent de la confiance, pas seulement des points** —
   parce qu'en vrai, une fausse piste coûte du temps, pas une note.
+- **Le contenu est testé, pas seulement typé.** `npm run validate` vérifie les
+  623 chaînes bilingues, les identifiants d'options orphelins, les doublons, la
+  cohérence entre techniques « observées » et réponses attendues, et le fait que
+  chaque lien ATT&CK pointe bien vers la technique qu'il annonce. Le script tourne
+  avant chaque build, en local comme en CI.
 
 ### Rigueur du contenu
 
@@ -190,7 +198,8 @@ npm run dev
 | --- | --- |
 | `npm run dev` | Serveur de développement Vite sur `http://localhost:5173` |
 | `npm run typecheck` | Vérification TypeScript stricte, sans émission |
-| `npm run build` | `tsc --noEmit` puis build de production dans `dist/` |
+| `npm run validate` | Tests de contenu : identifiants orphelins, doublons, liens ATT&CK, chaînes FR/EN manquantes |
+| `npm run build` | Typecheck, validation du contenu, puis build de production dans `dist/` |
 | `npm run preview` | Sert le build de production localement |
 
 Prérequis : **Node.js 20 ou plus** et npm.
@@ -299,6 +308,10 @@ Design choices worth calling out:
   the game runs in private windows (with a visible warning).
 - **Wrong answers cost confidence, not just points** — because in real life a
   dead end costs time, not marks.
+- **The content is tested, not just typed.** `npm run validate` checks the 623
+  bilingual strings, dangling option ids, duplicates, the agreement between
+  "observed" techniques and expected answers, and that every ATT&CK link points
+  at the technique it claims. It runs before every build, locally and in CI.
 
 ### Content rigour
 
@@ -338,7 +351,8 @@ npm run dev
 | --- | --- |
 | `npm run dev` | Vite dev server on `http://localhost:5173` |
 | `npm run typecheck` | Strict TypeScript check, no emit |
-| `npm run build` | `tsc --noEmit` then a production build into `dist/` |
+| `npm run validate` | Content tests: dangling ids, duplicates, ATT&CK links, missing FR/EN strings |
+| `npm run build` | Typecheck, content validation, then a production build into `dist/` |
 | `npm run preview` | Serves the production build locally |
 
 Requires **Node.js 20+** and npm.
