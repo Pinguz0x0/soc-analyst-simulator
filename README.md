@@ -5,6 +5,7 @@
 **Trois incidents réels. Une console. Votre jugement.**
 *Three real incidents. One console. Your judgement.*
 
+[![Deploy](https://github.com/Pinguz0x0/soc-analyst-simulator/actions/workflows/deploy.yml/badge.svg)](https://github.com/Pinguz0x0/soc-analyst-simulator/actions/workflows/deploy.yml)
 [![React](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react&logoColor=white)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 [![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev)
@@ -199,7 +200,7 @@ npm run dev
 | `npm run build` | Typecheck, validation du contenu, puis build de production dans `dist/` |
 | `npm run preview` | Sert le build de production localement |
 
-Prérequis : **Node.js 20 ou plus** et npm.
+Prérequis : **Node.js 20 ou plus** et npm. Le projet est construit et déployé sur Node 24 LTS.
 
 ### Déploiement sur GitHub Pages
 
@@ -357,7 +358,7 @@ npm run dev
 | `npm run build` | Typecheck, content validation, then a production build into `dist/` |
 | `npm run preview` | Serves the production build locally |
 
-Requires **Node.js 20+** and npm.
+Requires **Node.js 20+** and npm. The project is built and deployed on Node 24 LTS.
 
 ### Deploying to GitHub Pages
 
